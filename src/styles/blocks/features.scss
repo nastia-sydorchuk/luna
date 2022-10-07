@@ -1,0 +1,66 @@
+.features {
+  @include mobile {
+    background-color: #f2f2f2;
+    padding: 45px 0;
+    margin-bottom: 45px;
+  }
+
+  &__title {
+    margin: 0 0 24px;
+    text-align: center;
+
+    @include mobile {
+      margin-bottom: 50px;
+    }
+
+    @include tablet {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__image-container {
+    @extend %features-container;
+    padding: 176px 124px 16px 204px;
+    
+    @include tablet {
+      padding: 162px 0 78px 58px;
+      right: 0;
+      width: 80%;
+    }
+
+    @include mobile {
+      position: relative;
+      z-index: 0;
+      padding: 0;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 510px;
+    object-position: right;
+    object-fit: contain;
+
+    @include mobile {
+      height: 222px;
+    }
+
+    @include tablet {
+      height: 380px;
+    }
+  }
+
+  &__feature {
+    @include mobile {
+      position: absolute;
+      top: 18.5%;
+      left: 0;
+      transform: translateX(-100%);
+
+      &--active {
+        position: relative;
+        transform: translateX(0);
+      }
+    }
+  }
+}
