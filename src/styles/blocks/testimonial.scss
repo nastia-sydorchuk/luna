@@ -33,7 +33,7 @@
   &__photo {
     margin: 0 auto 20px;
 
-    transition: all 0.5s;
+    @extend %transition;
 
     &:hover {
       transform: scale(115%);

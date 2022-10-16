@@ -62,7 +62,7 @@
       box-sizing: border-box;
       width: 54px;
       border: 1px solid $colorGreen;
-      transition: all 0.5s;
+      @extend %transition;
     }
 
     &:hover {

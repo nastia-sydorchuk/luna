@@ -1,5 +1,5 @@
 .feature {
-  transition: all 0.5s;
+  @extend %transition;
 
   &__title {
     margin: 0 0 30px;

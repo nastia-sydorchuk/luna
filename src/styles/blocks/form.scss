@@ -22,10 +22,31 @@
       }
     }
 
+    &--invalid {
+      border-color: #dc143c;
+    }
+
     &::placeholder {
       font-size: 16px;
       line-height: 18px;
       color: #bdbdbd;
     }
+  }
+
+  &__message {
+    &--error {
+      color: #dc143c;
+      margin-bottom: 4px;
+    }
+
+    &--hidden {
+      visibility: hidden;
+    }
+  }
+
+  &__submission {
+    display: flex;
+    align-items: center;
+    gap: 32px;
   }
 }

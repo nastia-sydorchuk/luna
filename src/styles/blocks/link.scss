@@ -2,7 +2,7 @@
   text-decoration: none;
   color: $colorGrey;
 
-  transition: all 0.5s;
+  @extend %transition;
 
   &:hover {
     color: $colorGreen;

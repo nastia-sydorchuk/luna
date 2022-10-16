@@ -35,6 +35,10 @@
     position: absolute;
     right: 262px;
     bottom: 218px;
+    height: 24px;
+    width: 20px;
+    @extend %transition;
+    color: #333;
 
     @include mobile {
       right: 30px;
@@ -44,6 +48,34 @@
     @include tablet {
       right: 48px;
       bottom: 296px;
+    }
+
+    &:hover {
+      color: $colorGreen;
+      transform: scale(115%);
+    }
+  }
+
+  &__network {
+    width: $socials-size;
+    height: $socials-size;
+    @extend %transition;
+    color: #4f4f4f;
+
+    &--facebook {
+      &:hover {
+        color: #3b5998;
+      }
+    }
+    &--twitter {
+      &:hover {
+        color: #00acee;
+      }
+    }
+    &--instagram {
+      &:hover {
+        color: #b16c4f;
+      }
     }
   }
 }
